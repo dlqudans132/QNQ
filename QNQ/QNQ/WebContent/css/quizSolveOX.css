@@ -1,0 +1,97 @@
+@import
+	url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap")
+	;
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+	font-size: 18px;
+}
+
+.gridOX {
+	padding: 10px 50px 30px;
+	margin: 50px auto;
+	width: 600px;
+	background: #fff;
+	border: 2px solid #eed0dc;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #cbcbcb;
+}
+
+.gridOX h1 {
+	color: #333;
+	font-size: 2.4em;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#questionOX {
+	padding: 50px 2em;
+	background: rgba(150, 117, 240, .54);
+	border-radius: 15px;
+	font-size: 24px;
+	color: #fff;
+}
+
+#quizOX {
+	text-align: center;
+}
+
+#progressOX {
+	font-size: 20px;
+	color: #2b2b2b;
+}
+
+.buttonsOX {
+	padding: 30px 50px;
+	border: 2px solid #eed0dc;
+	border-radius: 20px;
+}
+
+.btnOX1 {
+	margin-top: 20px;
+	padding: 40px;
+	width: 180px;
+	font-size: 50px;
+	color: #333;
+	background: rgba(240, 78, 67, .50);
+	border: 1px solid #ffe3ed;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: all .2s;
+	padding: 40px;
+}
+
+.btnOX2 {
+	margin-top: 20px;
+	padding: 40px;
+	width: 180px;
+	font-size: 50px;
+	color: #333;
+	background: rgba(112, 163, 235, .50);
+	border: 1px solid #ffe3ed;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: all .2s;
+	padding: 40px;
+}
+
+.btnOX1:nth-child(2n) {
+	margin-right: 0;
+}
+
+.btnOX2:nth-child(2n) {
+	margin-right: 0;
+}
+
+.btnOX1:hover {
+	background: rgba(240, 78, 67, .90);
+	color: #fff;
+}
+
+.btnOX2:hover {
+	background: rgba(112, 163, 235, .90);
+	color: #fff;
+}
+}

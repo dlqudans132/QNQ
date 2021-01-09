@@ -1,0 +1,506 @@
+@charset "UTF-8";
+
+/* input text */
+.input_text_wrap {
+	position: relative;
+	z-index: 1;
+	height: 48px;
+	border: none;
+	border-bottom: 2px solid #fff;
+	background-color: transparent;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box
+}
+
+.input_text_wrap .input_text {
+	width: 100%;
+	height: 100%;
+	padding: 0 6px;
+	font-size: 18px;
+	color: #fff;
+	box-sizing: border-box
+}
+
+.input_text_wrap .input_text2 {
+	width: 100%;
+	height: 100%;
+	padding: 0 6px;
+	font-size: 18px;
+	color: #fff;
+	box-sizing: border-box
+}
+
+.input_text_wrap .input_text2::placeholder {
+	color: white;
+}
+
+.input_text_wrap label {
+	position: absolute;
+	top: 50%;
+	left: 6px;
+	font-size: 18px;
+	color: #fff;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	opacity: .4;
+}
+
+@media screen and (max-width:767px) {
+	.input_text_wrap .input_text {
+		padding: 0 6px
+	}
+}
+/* button */
+.btn_wrap {
+	margin-top: 22px;
+	font-size: 0
+}
+
+.btn_wrap.center {
+	text-align: center
+}
+
+.btn_wrap .btn {
+	display: inline-block;
+	position: relative;
+	padding: 0 30px;
+	background-color: rgba(0, 0, 0, .1);
+	border-radius: 21px;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+	text-align: center;
+	line-height: 42px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow: hidden;
+}
+
+.btn_wrap .btn2 {
+	display: inline-block;
+	position: relative;
+	padding: 0 30px;
+	background-color: rgba(0, 0, 0, .1);
+	border-radius: 21px;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+	text-align: center;
+	line-height: 42px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow: hidden;
+}
+
+.btn_wrap .no {
+	display: inline-block;
+	position: relative;
+	padding: 0 30px;
+	background-color: rgba(0, 0, 0, .1);
+	border-radius: 21px;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+	text-align: center;
+	line-height: 42px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow: hidden;
+}
+
+.create_class .btn {
+	background-color: #8c67dd
+}
+
+.create_class .btn2 {
+	background-color: #5d7ce3;
+}
+
+.join_class .btn {
+	background-color: #343a4b
+}
+
+.btn_wrap .btn:before {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	height: 100%;
+	background: rgba(0, 0, 0, .2);
+	transition: ease-in-out .4s;
+	content: '';
+}
+
+.btn_wrap .btn2:before {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	height: 100%;
+	background: rgba(0, 0, 0, .2);
+	transition: ease-in-out .4s;
+	content: '';
+}
+
+.create_class .btn:before {
+	background: #7052b1;
+}
+
+.create_class .btn2:before {
+	background: #496eeb;
+}
+
+.join_class .btn:before {
+	background: #2a2e3c;
+}
+
+.btn_wrap .btn:hover:before, .btn_wrap .btn:focus:before {
+	top: 0;
+}
+
+.btn_wrap .btn2:hover:before, .btn_wrap .btn2:focus:before {
+	top: 0;
+}
+
+.btn_wrap.is_pair .btn {
+	margin-left: 10px;
+}
+
+.btn_wrap.is_pair .btn:first-child {
+	margin-left: 0
+}
+
+.btn_wrap .btn span {
+	position: relative;
+	z-index: 1;
+}
+
+.btn_wrap.is_pair .btn2 {
+	margin-left: 10px;
+}
+
+.btn_wrap.is_pair .btn2:first-child {
+	margin-left: 0
+}
+
+.btn_wrap .btn2 span {
+	position: relative;
+	z-index: 1;
+}
+
+/* layout */
+.main .content {
+	position: absolute;
+	width: 1920px;
+	height: 760px;
+	top: 50%;
+	left: 30%;
+	transform: translate(-30%, -58%);
+	-o-transform: translate(-30%, -58%);
+	-ms-transform: translate(-30%, -58%);
+	-moz-transform: translate(-30%, -58%);
+	-webkit-transform: translate(-30%, -58%);
+}
+
+/* main class box */
+.main_class_box {
+	height: 100%;
+	font-size: 0;
+}
+
+.main_class_box .main_class_item {
+	display: inline-block;
+	position: relative;
+	width: 33.33%; /* 50% */ /* 마우스 올리기전 크기 */
+	height: 100%; /* 100% */
+	vertical-align: top;
+	color: #dedede;
+	color: rgba(255, 255, 255, .4);
+	transition: ease-in-out .4s;
+	cursor: pointer;
+}
+
+.main_class_box .create_class {
+	background: #6383ec;
+	background: rgba(99, 131, 236, .97)
+}
+
+.main_class_box .login_class {
+	background: #9a70f7;
+	background: rgba(154, 112, 247, .97)
+}
+
+.main_class_box .logout_class {
+	background: #9a70f7;
+	background: rgba(154, 112, 247, .97)
+}
+
+.main_class_box .join_class {
+	background: #353c4e;
+	background: rgba(53, 60, 78, .97);
+}
+
+.main_class_box .inner {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+.main_class_box .section_title {
+	padding-top: 94px;
+	background-repeat: no-repeat;
+	background-position: 50% top;
+	font-size: 22px;
+}
+
+.main_class_box .create_class .section_title {
+	background-image: url(../img/ico_create.png);
+}
+
+.main_class_box .join_class .section_title {
+	background-image: url(../img/ico_join.png);
+}
+
+.main_class_box .login_class .section_title {
+	background-image: url(../img/ico_login.png);
+}
+
+.main_class_box .logout_class .section_title {
+	background-image: url(../img/ico_login.png);
+}
+
+.main_class_box .hidden_area {
+	display: none;
+	width: 0;
+	opacity: 0;
+	transition: 4s;
+}
+
+/* main class box hover anime */
+.main_class_box.hover .main_class_item {
+	width: 30%;
+}
+
+.main_class_box.hover .main_class_item.active {
+	width: 40%;
+	color: #fff;
+}
+
+.main_class_box.hover .create_class.active .section_title {
+	background-image: url(../img/ico_create_hover.png);
+}
+
+.main_class_box.hover .join_class.active .section_title {
+	background-image: url(../img/ico_join_hover.png);
+}
+
+.main_class_box.hover .login_class.active .section_title {
+	background-image: url(../img/ico_login_hover.png);
+}
+
+.main_class_box.hover .logout_class.active .section_title {
+	background-image: url(../img/ico_login_hover.png);
+}
+
+/* main class box click anime */
+.main_class_box.click .main_class_item {
+	width: 10%;
+}
+
+.main_class_box.click .main_class_item.c_active {
+	width: 80%;
+	color: #fff;
+}
+
+.main_class_box.click.hover .main_class_item.c_active {
+	width: 70%;
+}
+
+.main_class_box.click .main_class_item.active {
+	width: 20%;
+	color: #fff;
+}
+
+.main_class_box.click .main_class_item.active.c_active {
+	width: 80%;
+}
+
+.main_class_box.click .create_class .section_title {
+	padding-top: 50px;
+	font-size: 0;
+	background-image: url(../img/ico_create_click.png);
+}
+
+.main_class_box.click .create_class.active .section_title {
+	background-image: url(../img/ico_create_click_hover.png);
+}
+
+.main_class_box.click .login_class .section_title {
+	padding-top: 50px;
+	font-size: 0;
+	background-image: url(../img/ico_login_click.png);
+}
+
+.main_class_box.click .login_class.active .section_title {
+	background-image: url(../img/ico_login_click_hover.png);
+}
+
+.main_class_box.click .logout_class .section_title {
+	padding-top: 50px;
+	font-size: 0;
+	background-image: url(../img/ico_login_click.png);
+}
+
+.main_class_box.click .logout_class.active .section_title {
+	background-image: url(../img/ico_login_click_hover.png);
+}
+
+.main_class_box.click .join_class .section_title {
+	padding-top: 50px;
+	font-size: 0;
+	background-image: url(../img/ico_join_click.png);
+}
+
+.main_class_box.click .join_class.active .section_title {
+	background-image: url(../img/ico_join_click_hover.png);
+}
+
+/* main class box hidden area common */
+.main_class_box.click .main_class_item.c_active .section_title {
+	display: none;
+}
+
+.main_class_box.click .main_class_item.c_active .hidden_area {
+	display: block;
+	width: 100%;
+	opacity: 1;
+}
+
+.main_class_box.click .main_class_item.c_active .hidden_title {
+	font-size: 24px;
+	line-height: 1;
+}
+
+/* create class hidden area */
+.main_class_box.click .create_class.c_active .btn_wrap {
+	margin-top: 48px;
+	font-size: 0
+}
+
+.main_class_box.click .create_class.c_active .btn span {
+	display: inline-block;
+	padding-right: 24px;
+	background: url(../img/ico_plus.png) no-repeat 100% 50%;
+	font-size: 18px;
+}
+
+.main_class_box.click .create_class.c_active .btn2 span {
+	display: inline-block;
+	padding-right: 24px;
+	background: url(../img/ico_plus.png) no-repeat 100% 50%;
+	font-size: 18px;
+}
+
+/* join class hidden area */
+.main_class_box.click .join_class.c_active .code_section {
+	width: 360px;
+	margin: 52px auto 0;
+}
+
+.main_class_box.click .join_class.c_active .btn_wrap {
+	margin-top: 22px;
+	font-size: 0;
+	text-align: right;
+}
+
+.main_class_box.click .join_class.c_active .btn span {
+	display: inline-block;
+	width: 30px;
+	height: 14px;
+	background: url(../img/ico_arrow.png) no-repeat 100% 50%;
+	font-size: 18px;
+}
+
+.main_class_box.click .join_class.c_active .btn2 span {
+	display: inline-block;
+	width: 30px;
+	height: 14px;
+	background: url(../img/ico_arrow.png) no-repeat 100% 50%;
+	font-size: 18px;
+}
+
+/* join class hidden area */
+.main_class_box.click .login_class.c_active .code_section {
+	width: 360px;
+	margin: 52px auto 0;
+}
+
+.main_class_box.click .login_class.c_active .btn_wrap {
+	margin-top: 22px;
+	font-size: 0;
+	text-align: right;
+}
+
+.main_class_box.click .login_class.c_active .btn span {
+	display: inline-block;
+	width: 30px;
+	height: 14px;
+	background: url(../img/ico_arrow.png) no-repeat 100% 50%;
+	font-size: 18px;
+}
+
+.main_class_box.click .login_class.c_active .btn2 span {
+	display: inline-block;
+	width: 30px;
+	height: 14px;
+	background: url(../img/ico_arrow.png) no-repeat 100% 50%;
+	font-size: 18px;
+}
+
+.main_class_box.click .login_class.c_active .no span {
+	display: inline-block;
+	padding-right: 24px;
+	background: url(../img/ico_plus.png) no-repeat 100% 50%;
+	font-size: 18px;
+}
+
+/* 로그아웃 클래스 히든 영역 */
+.main_class_box.click .logout_class.c_active .code_section {
+	width: 360px;
+	margin: 52px auto 0;
+}
+
+.main_class_box.click .logout_class.c_active .btn_wrap {
+	margin-top: 22px;
+	font-size: 0;
+	text-align: right;
+}
+
+.main_class_box.click .logout_class.c_active .btn span {
+	display: inline-block;
+	width: 30px;
+	height: 14px;
+	background: url(../img/ico_arrow.png) no-repeat 100% 50%;
+	font-size: 18px;
+}
+
+.main_class_box.click .logout_class.c_active .btn2 span {
+	display: inline-block;
+	width: 30px;
+	height: 14px;
+	background: url(../img/ico_arrow.png) no-repeat 100% 50%;
+	font-size: 18px;
+}
+
+.main_class_box.click .logout_class.c_active .no span {
+	display: inline-block;
+	padding-right: 24px;
+	background: url(../img/ico_plus.png) no-repeat 100% 50%;
+	font-size: 18px;
+}

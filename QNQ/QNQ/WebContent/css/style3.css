@@ -1,0 +1,129 @@
+body{
+      background:white;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.box{
+ 	top: 50%;
+    left: 50%;
+    
+    background:white;
+    position: absolute;
+    border-radius: 8px;
+    transform: translate(-50%,-50%);
+    width:700px;
+    padding: 40px 0px;
+    box-shadow: 0 1px 4px #9c73f7, 0 0 20px #9c73f7;
+    
+}
+
+.left{
+    width:50%;
+    float:left;
+    
+}
+
+.right{
+    
+    width:50%;
+    float:right;
+    text-align: center;
+
+    
+}
+
+.input{
+    border-radius: 20px;
+    box-shadow: 0 2px 20px 0 #9c73f7;
+    padding: 10px 25px;
+    margin: 20px;
+    
+}
+
+input[type=text],input[type=password]{
+    background: transparent;
+    border: none;
+    outline: none;
+    
+    
+}
+
+h5{
+    text-align: center;
+    display: inline;
+    
+}
+.icon{
+    color:#9c73f7;
+    font-size: 20px;
+}
+
+input[type=submit]{
+    padding: 10px 50px;
+    border-radius: 20px;
+    border:none;
+    color:white;
+    font-weight: 500;
+    font-size: 14px;
+    outline: none;
+     background-image: linear-gradient(to bottom right,#9c73f7,#9900cc);
+   
+}
+
+h2{
+    font-size: 30px;
+    background: -webkit-linear-gradient(#9c73f7,#9900cc);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    paddinp-top:0;
+    
+}
+
+p{
+    padding:1px 50px;
+    
+}
+
+h3{
+    text-align: center;
+}
+.box1{
+    bottom: 50px;
+    right: 120px;
+    transform: rotate(45deg);
+    width: 80px;
+    height:80px;
+     background-image: linear-gradient(to bottom right,#9c73f7,#9900cc);
+    position: absolute;
+}
+
+
+.box2{
+    bottom: 50px;
+    right: 170px;
+    transform: rotate(45deg);
+    width: 80px;
+    height:80px;
+     background-image: linear-gradient(to bottom right,hotpink,#9900cc);
+    position: absolute;
+}
+.box3{
+    bottom: 50px;
+    right: 70px;
+    transform: rotate(45deg);
+    width: 80px;
+    height:80px;
+     background-image: linear-gradient(to bottom right,hotpink,#9900cc);
+    position: absolute;
+}
+
+h1{ 
+    
+    background: -webkit-linear-gradient(#9c73f7,#9900cc);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-transform: uppercase;
+    
+}

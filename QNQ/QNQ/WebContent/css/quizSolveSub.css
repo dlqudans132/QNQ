@@ -1,0 +1,89 @@
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap")
+	;
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+	font-size: 18px;
+}
+
+.gridS {
+	padding: 10px 50px 30px;
+	margin: 50px auto;
+	width: 600px;
+	background: #fff;
+	border: 2px solid #eed0dc;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #cbcbcb;
+}
+
+.gridS h1 {
+	color: #333;
+	font-size: 2.4em;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#questionS {
+	padding: 10px 2em;
+	background: salmon;
+	border-radius: 15px;
+	font-size: 24px;
+	color: #fff;
+}
+
+#quizS {
+	text-align: center;
+}
+
+#progressS {
+	font-size: 20px;
+	color: #2b2b2b;
+}
+
+.buttonsS {
+	padding: 30px 20px;
+	border: 2px solid #eed0dc;
+	border-radius: 20px;
+}
+
+.btnS {
+	margin-top: 20px;
+	padding: 20px;
+	width: 100px;
+	font-size: 16px;
+	color: #333;
+	background: #eed0dc;
+	border: 1px solid #ffe3ed;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all .2s;
+}
+
+#checkS {
+	border: 1px solid #eee2fd;
+	border-radius: 0px;
+	height: 40px;
+	width: 450px;
+	font-size: 15px;
+	color: #63717f;
+	background: #e1d8e8;
+	padding: 7px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.btnS:nth-child(2n) {
+	margin-right: 0;
+}
+
+.btnS:hover {
+	background: #c34c74;
+	color: #fff;
+}

@@ -1,0 +1,82 @@
+create table user (
+	userID varchar(20) not null,
+	userPassword varchar(100) not null,
+	userDate date,
+	primary key(userID));
+
+
+create table room (
+	roomNumber int not null,
+	userID varchar(20),
+	roomTitle varchar(50),
+	roomPassword varchar(100),
+	roomCode int,
+	roomJoinCode varchar(50),
+	roomAvailable int,
+	roomDate date,
+	primary key(roomNumber));
+
+create table quiz (
+	quizNumber int not null,
+	quizRNumber int,
+	quizTitle varchar(50),
+	quizForm varchar(10),
+	quizUserID varchar(100),
+	quizDate date,
+	quizSelect1 varchar(100),
+	quizSelect2 varchar(100),
+	quizSelect3 varchar(100),
+	quizSelect4 varchar(100),
+	quizSelect5 varchar(100),
+	quizHitCount int,
+	roomNumber int,
+	primary key(quizNumber));
+
+create table quizresult (
+	quizResultNumber int not null,
+	quizNumber int,
+	roomNumber int,
+	userID varchar(20),
+	anonymousID varchar(20),
+	quizForm varchar(20),
+	quizSelect1 varchar(100),
+	quizSelect2 varchar(100),
+	quizSelect3 varchar(100),
+	quizSelect4 varchar(100),
+	quizSelect5 varchar(100),
+	quizSelectO varchar(100),
+	quizSelectX varchar(100),
+	quizSelectS varchar(100),
+	primary key(quizResultNumber));
+
+create table quizstat (
+	quizStatNumber int not null,
+	quizNumber int,
+	quizForm varchar(20),
+	quizM1 int,
+	quizM2 int,
+	quizM3 int,
+	quizM4 int,
+	quizM5 int,
+	quizO int,
+	quizX int,
+	roomNumber int,
+	primary key(quizStatNumber));
+
+create table qna (
+	qnaNumber int not null,
+	qnaRNumber int,
+	roomNumber int,
+	anonymousID varchar(50),
+	qnaQuestion varchar(200),
+	primary key(qnaNumber)
+	);
+
+create table anonymous (
+	anonymousID varchar(50),
+	anonymousDate date,
+	roomCode int,
+	anonymousCnt int,
+	anonymousNickname varchar(50),
+	primary key(anonymousID));
+	
